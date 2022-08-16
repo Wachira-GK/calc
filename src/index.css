@@ -93,3 +93,13 @@ body{
     background-color:  var(--dark);
 
 }
+
+.back{
+    display: contents;
+    color: black;
+    max-width: 33%;
+    
+    
+    
+
+}
