@@ -10,8 +10,8 @@ function App() {
     const updateCalc = value => {
 		
 		if( 
-			ops.includes(value) && calc === '' ||
-			ops.includes(value) && ops.includes(calc.slice(-1))
+			(ops.includes(value) && calc === '' )||
+			(ops.includes(value) && ops.includes(calc.slice(-1)))
 		){
 			return ;
 		}
@@ -42,11 +42,11 @@ function App() {
     }
 
       const calculate = () => {
-        setCalc(eval(calc).toString());
+        setCalc(eval(calc).toString())
       }
 
       const deleteLast = () => {
-        if (calc == '') {
+        if (calc === '') {
           return;
         }
         const value = calc.slice(0,-1);
