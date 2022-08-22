@@ -1,2 +1,0 @@
-start vlc
-start notepad
